@@ -126,7 +126,7 @@ function addInv() {
 
                         console.log('\n-----------------Updated Inventory-----------------');
 
-                        console.log('\n               Product: ' + userChosenProduct.product_name);
+                        console.log('\n              Product: ' + userChosenProduct.product_name);
                         console.log('              id: ' + userChosenProduct.id)
                         console.log("              Quantity: " + add + '\n');
 
