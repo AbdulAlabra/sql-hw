@@ -1,9 +1,7 @@
 
 var mysql = require("mysql");
 var inquirer = require("inquirer");
-
 var connection = mysql.createConnection({
-
 
     host: "localhost",
     // Your port; if not 3306
@@ -52,7 +50,6 @@ function program_info() {
         });
 }
 
-
 function viewProducts() {
     connection.query('SELECT * FROM products', function (error, results, fields) {
 
@@ -60,7 +57,7 @@ function viewProducts() {
         console.log('-----------Avaliable Products------------\n');
 
         var showInfo = results.filter(function (obj) {
-            return console.log('--------------------------') + console.log('Product: ' + obj.product_name + '\nCatagory: ' + obj.department_name + '\nid: ' + obj.id + '\nAvailability: ' + obj.stock_quantity + " items" + '\nPrice: $' + obj.price + '\n');
+            return  console.log('--------------------------') + console.log('Product: ' + obj.product_name + '\nCatagory: ' + obj.department_name + '\nid: ' + obj.id + '\nAvailability: ' + obj.stock_quantity + " items" + '\nPrice: $' + obj.price + '\n');
         });
         program_info();
     });
@@ -179,6 +176,7 @@ function addProduct() {
 
     ])
         .then(function (ans) {
+
             if (ans.quantity <= 0) {
                 console.log(' Worng Quantity. It has to be higher than zero!');
                 program_info()
