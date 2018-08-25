@@ -5,16 +5,16 @@
 
 ## 2) You will then be shown avaliable products and be asked if you want to buy something. 
 ![my logo](2ndStage.png)
-##3) Your Order Summary
+## 3) Your Order Summary
 ![my logo](recipt.png)
 
-##1) Manager App. You will be avavlibe to add inventory, products, and veiw products and low inventory.   
+## 1) Manager App. You will be avavlibe to add inventory, products, and veiw products and low inventory.   
 ![my logo](manager.png)
 
-##2) Add a product.
+## 2) Add a product.
 ![my logo](add.png)
 
-##3) Add to inventory 
+## 3) Add to inventory 
 ![my logo](add2.png)
 
 
